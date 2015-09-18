@@ -36,7 +36,8 @@
     "coverage": "COVERAGE=true karma start --single-run",
     "patch": "release patch",
     "minor": "release minor",
-    "major": "release major"
+    "major": "release major",
+    "UMDPackage": "rimraf dist && npm run build && webpack && webpack -p"
   },
   "peerDependencies": {
     "react": ">=0.13.0"
